@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    font-size: 28px;
+    font-family: Heebo;        
+}
+/* header and navigator*/
+/*header*/
+header{
+    font-size: 18px;    
+    background-color: #972f2f;
+    color: white;   
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */   
+    font-weight: 700;     
+}
+/*navigator*/
+#navbar {
+    overflow: hidden;
+    background-color: #272727;
+}
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: #972f2f;
+    color: white;
+}
+#navbar a.active:hover {
+    background-color: #ddd;
+    color: #972f2f;
+}
+/* for sticky navigator*/
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
